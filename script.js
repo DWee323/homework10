@@ -3,7 +3,7 @@
 //why the heck is temp in kelvin?
 //K − 273.15 = °C
 
-//For all the forecasts: I want to forloop by (var i = 1; i <= 6; i = i + 1), but idk if I will have enough time. Therefore I will list out all separately first. If I have time afterwardsm I will study the forloop.
+//For all the forecasts: I want to forloop by (var i = 1; i < 6; i = i + 1), but idk if I will have enough time. Therefore I will list out all separately first. If I have time afterwardsm I will study the forloop.
 
 let city_search = document.querySelector("#city-search");
 
