@@ -3,6 +3,8 @@
 //why the heck is temp in kelvin?
 //K − 273.15 = °C
 
+//For all the forecasts: I want to forloop by (var i = 1; i <= 6; i = i + 1), but idk if I will have enough time. Therefore I will list out all separately first. If I have time afterwardsm I will study the forloop.
+
 let city_search = document.querySelector("#city-search");
 
 const get_weather_current = (data) => {
@@ -29,8 +31,6 @@ const get_weather_current = (data) => {
     on_page_temp_min_current.innerHTML = weather_temp_min_current;
 };
 
-
-//I want to forloop by (var i = 1; i <= 6; i = i + 1), but idk if I will have enough time. Therefore I will list out all separately first. If I have time afterwardsm I will study the forloop.
 const get_weather_forecast_1 = (data) => {
 
     let weather_summary_forecast_1 = data.list[8 * 0].weather[0].main;
