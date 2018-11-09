@@ -2,10 +2,10 @@
 
 //toddmotto/public-apis
 
-let citySearch = document.querySelector("#city-search");
-console.log(citySearch);
+let city_search = document.querySelector("#city-search");
+console.log(city_search);
 
-const getShow = (data) => {
+const getWeather = (data) => {
     let firstShow = data[0]; //to get array item 제일 위에 올라오는 애 (즉[0]가 가장 스코어가 높은 애거든)
     console.log(firstShow.show.id, firstShow.show.name, firstShow.show.language); //to get an object item (object(variable)name.nameofthe objectyouwant)
     console.log(firstShow.show);
