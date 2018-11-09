@@ -12,17 +12,17 @@
 <body>
     <div class="intro">
         <h1>Hello, Let's check out the weather !</h1>
-        <h5>Oh, by the way, I'm not very familiar with °F. Why don't you try out looking in °C for fun !</h5>
+        <h5>Oh, by the way, I'm not very familiar with °F. Why don't you try out looking in °C for fun :)</h5>
     </div>
 
     <div class="search-prompt">
-        <h4>Please type in the name of the city you want to know the weather of.<br>Then hit Enter or Tab.</h4>
+        <h4>Please type in the name of the CITY you want to know the weather of.<br>Then hit Enter or Tab.</h4>
     </div>
 
     <input type="search" name="search" id="city-search">
 
     <div class="current">
-        <h3>Currently, it is<br><span id="on-page-temp-now-current"></span> °C</h3>
+        <h4>Currently, it is  <span id="on-page-temp-now-current"></span> °C</h4>
         <h3 id="on-page-summary-current"></h3>
         <img src="#" id="on-page-icon-current" width="70">
         <div>High: <span id="on-page-temp-max-current"></span> °C</div>
@@ -34,7 +34,7 @@
 
         <div class="row forecast 1">
             <div class="day-plus-1">
-                    <h3>D +1</h3>
+                <h3>D +1</h3>
                 <div id="on-page-summary-forecast-1"></div>
                 <img src="#" id="on-page-icon-forecast-1" width="50">
                 <div>High: <span id="on-page-temp-max-forecast-1"></span> °C</div>
@@ -44,7 +44,7 @@
 
         <div class="row forecast 2">
             <div class="day-plus-2">
-                    <h3>D +2</h3>
+                <h3>D +2</h3>
                 <div id="on-page-summary-forecast-2"></div>
                 <img src="#" id="on-page-icon-forecast-2" width="50">
                 <div>High: <span id="on-page-temp-max-forecast-2"></span> °C</div>
@@ -52,20 +52,36 @@
             </div>
         </div>
 
-        <div class="row 1">
-            <div class="col-6">
-                Today
-                <span id="date_1" class="date"></span>
-            </div>
-            <div class="col-3">
-                High temp:
-                <span id="high_1" class="temp"></span> °C
-            </div>
-            <div class="col-3">
-                Low temp:
-                <span id="low_1" class="temp"></span> °C
+        <div class="row forecast 3">
+            <div class="day-plus-3">
+                <h3>D +3</h3>
+                <div id="on-page-summary-forecast-3"></div>
+                <img src="#" id="on-page-icon-forecast-3" width="50">
+                <div>High: <span id="on-page-temp-max-forecast-3"></span> °C</div>
+                <div>Low: <span id="on-page-temp-min-forecast-3"></span> °C</div>
             </div>
         </div>
+
+        <div class="row forecast 4">
+            <div class="day-plus-4">
+                <h3>D +4</h3>
+                <div id="on-page-summary-forecast-4"></div>
+                <img src="#" id="on-page-icon-forecast-4" width="50">
+                <div>High: <span id="on-page-temp-max-forecast-4"></span> °C</div>
+                <div>Low: <span id="on-page-temp-min-forecast-4"></span> °C</div>
+            </div>
+        </div>
+
+        <div class="row forecast 5">
+            <div class="day-plus-5">
+                <h3>D +5</h3>
+                <div id="on-page-summary-forecast-5"></div>
+                <img src="#" id="on-page-icon-forecast-5" width="50">
+                <div>High: <span id="on-page-temp-max-forecast-5"></span> °C</div>
+                <div>Low: <span id="on-page-temp-min-forecast-5"></span> °C</div>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
