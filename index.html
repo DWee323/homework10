@@ -16,115 +16,123 @@
     </div>
 
     <div class="search-prompt">
-            <h4>Please type in the name of the city you want to know the weather of.<br>Then hit Enter.</h4>
+        <h4>Please type in the name of the city you want to know the weather of.<br>Then hit Enter.</h4>
     </div>
 
     <input type="search" name="search" id="city-search">
 
-    <div>
-        <h2 id="show-title"></h2>
-        <img src="#" id="show-image" width="200">
-        <div id="show-summary"></div>
+
+
+    <div class="current">
+        <h3><span id="on-page-temp-now-current"></span> °C</h3>
+        <h3 id="on-page-summary-current"></h3>
+        <img src="#" id="on-page-icon-current" width="70">
+        <div>High: <span id="on-page-temp-max-current"></span> °C</div>
+        <div>Low: <span id="on-page-temp-min-current"></span> °C</div>
     </div>
+
 
     <div class="container text-center">
 
-            <div class="row 1">
-                <div class="col-6">
-                    Today
-                    <span id="date_1" class="date"></span>
-                </div>
-                <div class="col-3">
-                    High temp:
-                    <span id="high_1" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                    Low temp:
-                    <span id="low_1" class="temp"></span> °C
-                </div>
-            </div>
-    
-            <div class="row 2">
-                <div class="col-6">
-                    D +1
-                    <span id="date_2" class="date"></span>
-                </div>
-                <div class="col-3">
-                        High temp:
-                    <span id="high_2" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                        Low temp:
-                    <span id="low_2" class="temp"></span> °C
-                </div>
-            </div>
-    
-            <div class="row 3">
-                <div class="col-6">
-                        D +2
-                    <span id="date_3" class="date"></span>
-                </div>
-                <div class="col-3">
-                        High temp:
-                    <span id="high_3" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                        Low temp:
-                    <span id="low_3" class="temp"></span> °C
-                </div>
-            </div>
-    
-            <div class="row 4">
-                <div class="col-6">
-                        D +3
-                    <span id="date_4" class="date"></span>
-                </div>
-                <div class="col-3">
-                        High temp:
-                    <span id="high_4" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                        Low temp:
-                    <span id="low_4" class="temp"></span> °C
-                </div>
-            </div>
-    
-            <div class="row 5">
-                <div class="col-6">
-                        D +4
-                    <span id="date_5" class="date"></span>
-                </div>
-                <div class="col-3">
-                        High temp:
-                    <span id="high_5" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                        Low temp:
-                    <span id="low_5" class="temp"></span> °C
-                </div>
-            </div>
-    
-            <div class="row 6">
-                <div class="col-6">
-                        D +5
-                    <span id="date_6" class="date"></span>
-                </div>
-                <div class="col-3">
-                        High temp:
-                    <span id="high_6" class="temp"></span> °C
-                </div>
-                <div class="col-3">
-                    Low temp:
-                    <span id="low_6" class="temp"></span> °C
-                </div>
+        <div class="row forecast">
+            <div class="day-plus-1">
+                <div id="on-page-summary-forecast"></div>
+                <img src="#" id="on-page-icon-forecast" width="50">
+                <div>High: <span id="on-page-temp-max-forecast"></span> °C</div>
+                <div>Low: <span id="on-page-temp-min-forecast"></span> °C</div>
             </div>
         </div>
 
-    <!-- hehe this is my note -->
-    <h2 style="color:rgb(42, 34, 26)">Today is also <span style="color:rgb(32, 27, 28)">without</span>
-        <span style="color:rgb(255, 2, 137)">SUN</span> -_- sad...</h2>
-    <h3 style="color:rgb(44, 43, 43)">I am so freakinf tired. Is the sun ever out?<br>Tis just copy from last week,
-        will fix</h3>
+        <div class="row 1">
+            <div class="col-6">
+                Today
+                <span id="date_1" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_1" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_1" class="temp"></span> °C
+            </div>
+        </div>
+
+        <div class="row 2">
+            <div class="col-6">
+                D +1
+                <span id="date_2" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_2" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_2" class="temp"></span> °C
+            </div>
+        </div>
+
+        <div class="row 3">
+            <div class="col-6">
+                D +2
+                <span id="date_3" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_3" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_3" class="temp"></span> °C
+            </div>
+        </div>
+
+        <div class="row 4">
+            <div class="col-6">
+                D +3
+                <span id="date_4" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_4" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_4" class="temp"></span> °C
+            </div>
+        </div>
+
+        <div class="row 5">
+            <div class="col-6">
+                D +4
+                <span id="date_5" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_5" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_5" class="temp"></span> °C
+            </div>
+        </div>
+
+        <div class="row 6">
+            <div class="col-6">
+                D +5
+                <span id="date_6" class="date"></span>
+            </div>
+            <div class="col-3">
+                High temp:
+                <span id="high_6" class="temp"></span> °C
+            </div>
+            <div class="col-3">
+                Low temp:
+                <span id="low_6" class="temp"></span> °C
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
